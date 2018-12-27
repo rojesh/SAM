@@ -13,15 +13,20 @@ Resources:
       Timeout: 30
       Policies:
         - AWSLambdaBasicExecutionRole
+        - AmazonDynamoDBFullAccess
       Events:
         MyEndpoint:
           Type: Api 
           Properties:
             Path: /test
             Method: get
+      Environment:
+        Variables:
+          table_name: SampleTable
   SampleTable:
     Type: AWS::Serverless::SimpleTable
     Properties:
+      TableName: SampleTable
       PrimaryKey:
         Name: name
         Type: String
