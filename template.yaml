@@ -7,7 +7,7 @@ Resources:
     Properties:
       FunctionName: HelloLambda
       Handler: index.lambda_handler
-      Runtime: Ruby2.5 
+      Runtime: ruby2.5 
       CodeUri: src 
       MemorySize: 128 
       Timeout: 30
