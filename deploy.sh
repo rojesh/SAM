@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PROJECT=sam-rojace
+PROJECT=rojace-sam
 
 BUCKET=$PROJECT-playground
 
