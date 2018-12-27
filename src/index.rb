@@ -1,6 +1,7 @@
-def lambda_handler(event, context)
+def lambda_handler(event:, context:)
+  response_body = 'Hello, this is the API gateway test'
   {
-    code: 200,
-    body: 'Hello, this is the test lambda method'
+    statusCode: 200,
+    body: JSON.generate(response_body)
   }
 end
