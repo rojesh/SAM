@@ -6,6 +6,7 @@ def lambda_handler(event:, context:)
   })
   {
     statusCode: 200,
+    headers: { "Access-Control-Allow-Origin": "*" },
     body: JSON.generate(response.items)
   }
 end
